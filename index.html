@@ -1,8 +1,76 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航标签 -->
+    <nav class="tabs">
+        <button class="tab active" data-tab="about">About Myself</button>
+        <button class="tab" data-tab="emotion">情感</button>
+        <button class="tab" data-tab="existence">存在</button>
+        <button class="tab" data-tab="thought">思考</button>
+        <button class="tab" data-tab="freedom">自由</button>
+    </nav>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+    <!-- 内容区域 -->
+    <div class="content">
+        <!-- About Myself 页面 -->
+        <div id="about" class="tab-content active">
+            <div class="about-container">
+                <img src="images/avatar.jpg" alt="我的照片" class="avatar">
+                <div class="bio">
+                    <h1>我是XXX</h1>
+                    <p>这里写你的个人简介、经历、技能等文字信息...</p>
+                    <h2>项目经历</h2>
+                    <ul>
+                        <li>项目1：描述...</li>
+                        <li>项目2：描述...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 情感项目页面 -->
+        <div id="emotion" class="tab-content">
+            <h1>情感项目</h1>
+            <div class="gallery">
+                <img src="images/emotion-1.jpg" alt="情感项目1">
+                <img src="images/emotion-2.jpg" alt="情感项目2">
+            </div>
+        </div>
+
+        <!-- 存在项目页面 -->
+        <div id="existence" class="tab-content">
+            <h1>存在项目</h1>
+            <div class="gallery">
+                <img src="images/existence-1.jpg" alt="存在项目1">
+                <img src="images/existence-2.jpg" alt="存在项目2">
+            </div>
+        </div>
+
+        <!-- 思考项目页面 -->
+        <div id="thought" class="tab-content">
+            <h1>思考项目</h1>
+            <div class="gallery">
+                <img src="images/thought-1.jpg" alt="思考项目1">
+                <img src="images/thought-2.jpg" alt="思考项目2">
+            </div>
+        </div>
+
+        <!-- 自由项目页面 -->
+        <div id="freedom" class="tab-content">
+            <h1>自由项目</h1>
+            <div class="gallery">
+                <img src="images/freedom-1.jpg" alt="自由项目1">
+                <img src="images/freedom-2.jpg" alt="自由项目2">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
