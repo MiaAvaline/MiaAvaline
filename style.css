@@ -1,3 +1,51 @@
+/* 标签导航透明化 & 右侧布局 */
+.tabs {
+    display: flex;
+    background: transparent;  /* 移除原背景色 */
+    padding: 20px 20px 0;
+    justify-content: flex-end; /* 标签靠右对齐 */
+    gap: 15px; /* 标签间距 */
+}
+
+.tab {
+    padding: 8px 20px;
+    background: transparent; /* 透明背景 */
+    color: #333; /* 文字颜色深色 */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-radius: 0; /* 移除圆角 */
+}
+
+.tab:hover {
+    color: #007bff; /* 悬停时文字变蓝色 */
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    color: #007bff; /* 激活标签颜色 */
+    border-bottom: 2px solid #007bff; /* 底部线条指示激活状态 */
+    font-weight: bold;
+    background: transparent; /* 确保激活标签背景透明 */
+}
+
+/* About Myself 页面头像居中并缩小 */
+.about-container {
+    display: block; /* 改为块级布局 */
+    text-align: center; /* 内容居中 */
+    padding: 30px 0;
+}
+
+.avatar {
+    width: 150px; /* 缩小尺寸 */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px; /* 上下20px 左右自动居中 */
+    border: 3px solid #eee;
+}
+
 /* 基础样式 */
 body {
     font-family: 'Arial', sans-serif;
