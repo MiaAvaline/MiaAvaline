@@ -25,7 +25,6 @@
 
 .tab.active {
     color: #007bff; /* 激活标签颜色 */
-    border-bottom: 2px solid #007bff; /* 底部线条指示激活状态 */
     font-weight: bold;
     background: transparent; /* 确保激活标签背景透明 */
 }
@@ -38,8 +37,8 @@
 }
 
 .avatar {
-    width: 150px; /* 缩小尺寸 */
-    height: 150px;
+    width: 100px; /* 缩小尺寸 */
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px; /* 上下20px 左右自动居中 */
