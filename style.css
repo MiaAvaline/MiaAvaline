@@ -51,3 +51,15 @@
     margin: 0 auto 20px; /* 上下20px 左右自动居中 */
     border: 3px solid #eee;
 }
+/* 保持超链接颜色一致 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:visited {
+    color: #007bff; /* 点击后仍然是蓝色 */
+}
+a:hover {
+    text-decoration: underline;
+}
+
