@@ -11,8 +11,10 @@
 }
 
 .bio {
+
+    text-align: left;
     max-width: 800px; /* 正文最大宽度800px，阅读体验好 */
-    margin: 0 auto;   /* 居中显示 */
+    
 }
 .tab {
     padding: 8px 20px;
