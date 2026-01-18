@@ -40,11 +40,11 @@
 
 /* 隐藏非激活的页面内容 */
 .tab-content {
-    display: none;
+    display: none !important;
 }
 
 .tab-content.active {
-    display: block;
+    display: block !important;
 }
 
 /* About Myself 页面头像居中并缩小 */
@@ -125,8 +125,8 @@ a:hover {
 
 .cv-pdf-container {
     width: 100%;
-    max-width: 1000px;
-    height: 1200px;
+    max-width: 1200px;
+    height: 1600px;
     margin: 0 auto;
     border: 1px solid #ddd;
     border-radius: 4px;
