@@ -1,19 +1,19 @@
-/* 标签导航透明化 & 右侧布局 - 固定定位 */
+/* 标签导航透明化 & 右侧布局 */
 .tabs {
     display: flex;
     position: fixed; /* 固定定位 */
-    top: 0; /* 顶部 */
-    right: 0; /* 右侧 */
-    background: transparent;  /* 移除原背景色 */
-    padding: 20px 20px 0;
+    top: 0; /* 顶部对齐 */
+    right: 0; /* 右侧对齐 */
+    background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+    padding: 20px;
     justify-content: flex-end; /* 标签靠右对齐 */
     gap: 15px; /* 标签间距 */
-    z-index: 1000; /* 确保在其他内容之上 */
-    width: 100%; /* 占满宽度 */
-    box-sizing: border-box; /* 包含padding */
+    z-index: 1000; /* 确保在内容之上 */
+    width: 100%; /* 全宽度 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
 }
 .content {
-    padding: 60px 280px 0; /* 上内边距避免被固定导航栏遮挡，左右各留280px空白 */
+    padding: 80px 280px 0; /* 顶部留白避免被导航栏遮挡，左右各留280px空白 */
 }
 
 .bio {
